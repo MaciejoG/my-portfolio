@@ -1,0 +1,12 @@
+[15-Oct-2020 18:59:36 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: gg.maciek@gmail.com -- Headers: From: maciej.gumulka@gmail.com -- Subject: asdsdasdsad
+[15-Oct-2020 19:05:10 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: gg.maciek@gmail.com -- Headers: From: asd -- Subject: asdasd
+[15-Oct-2020 19:05:41 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: gg.maciek@gmail.com -- Headers: From: asdas -- Subject: ads
+[15-Oct-2020 19:06:49 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: gg.maciek@gmail.com -- Headers: From: ads -- Subject: asdasd
+[15-Oct-2020 19:16:20 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: maciej.gumulka@northvolt.com -- Headers: From: asdas -- Subject: asdasa
+[15-Oct-2020 19:20:40 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:23]: To: gg.maciek@gmail.com.com -- Headers:  -- Subject: My Subject
+[15-Oct-2020 19:20:57 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:23]: To: gg.maciek@gmail.com.com -- Headers:  -- Subject: My Subject
+[15-Oct-2020 19:21:21 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:23]: To: gg.maciek@gmail.com -- Headers:  -- Subject: My Subject
+[15-Oct-2020 19:31:55 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:23]: To: gg.maciek@gmail.com -- Headers:  -- Subject: My Subject
+[17-Oct-2020 14:48:11 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: youremail@here.com -- Headers: From: -- Subject: 
+[17-Oct-2020 14:48:18 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: youremail@here.com -- Headers: From: -- Subject: 
+[17-Oct-2020 14:50:36 UTC] mail() on [/Users/maciejgumulka/Documents/my-portfolio/dist/mail.php:14]: To: youremail@here.com -- Headers: From: -- Subject: 
