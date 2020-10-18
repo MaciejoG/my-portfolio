@@ -39,3 +39,6 @@ h5 {
     background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#navbar-project {
+  opacity: 1.0;
+}
