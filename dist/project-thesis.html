@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>M. Gumulka - Traceability</title>
+  <title>M. Gumulka - Failures Detection</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -66,23 +66,21 @@
     <!-- Container -->
     <div class="container">
       <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold text-center mb-2">Traceability for Battery Factory</h2>
+      <h2 class="h1-responsive font-weight-bold text-center mb-2">Automated Detection of Failures in Production of Batteries</h2>
       <!-- Section description -->
-      <p class="lead grey-text text-justify w-responsive mx-auto mb-5">A robust technical project I have been developing for a swedish company Northvolt for the duration of 1 year. The goal is to build from scratch a Manufacturing Execution system (MES) for the entire production of battery modules&packs.
-      This system will allow for decision-driver production, elimination of production bottlenecks, clear internal and external information flow, automated documentation generation and many more. Main challenges include ensuring high scaleability and availability, as well as conceptual design for the entire production floor. The implementation of the system involves multiple stakeholders across many departments and is my biggest project so far.</p>
+      <p class="lead grey-text text-justify w-responsive mx-auto mb-5">This project has been realized at a swedish battery manufacturer Northvolt, as my Master Thesis: "Automated Detection of Wirebonding Failures for Li-Ion Batteries Using Machine Learning". The goal of the project was to build a novel testing method for detection of small mechanical failures occuring regurarly during production of battery modules. This problem has been recognized as a significant quality deterioration of the product, which causes major issues during field-operation requiring expensive reworks and resulting in dissatisifed customers. I have built, trained and validated a supervised Machine Learning model which has been implemented as an End-of-Line test during production. This method achieved relatively high accuracy while keeping the test time low. The thesis score was 16.5/20, placing it in top 10% of the students.</p>
   
   <!-- Grid row -->
   <div class="row mb-5">
     <!-- Grid column -->
     <div class="col-md-7">
-      <i class="fas fa-lightbulb fa-5x yellow-text animated tada"></i>
-      <h5 class="font-weight-bold my-4">System Logic</h5>
-      <p class="grey-text mb-md-0 mb-0">Prior to start with coding or database developemnt, I have conceptually designed the entire logic using a top-down approach. This included finding answers to the following items: 
-        <li class="grey-text">what production data is to be captured,</li>
-        <li class="grey-text">safe flow of products across process stations,</li> 
-        <li class="grey-text">changes of products' statuses, versions and genealogy,</li>
-        <li class="grey-text">allowed and forbidden product operations,</li>
-        <li class="grey-text">backup and system maintanance.</li>
+      <i class="fas fa-battery-three-quarters fa-5x green-text animated tada"></i>
+      <h5 class="font-weight-bold my-4">Test Setup</h5>
+      <p class="grey-text mb-md-0 mb-0">Every Machine Learning model is as good as the data provided. Because of that, I spent a significant amount of time developing the first stage of the project - test setup. I have designed and built a manufacturing testing station, which precharges the module to the desired SOC and applies short current pulses. These induce voltage curves which are then to be analyzed by the ML model in stage two. Key challanges solves in stage one: 
+        <li class="grey-text">manufacturing requirements (cycle-time, safety),</li>
+        <li class="grey-text">product limitations,</li> 
+        <li class="grey-text">software to control testing equipment and enable synchronized data capture,</li>
+        <li class="grey-text">hardware.</li>
       </p>
     </div>
     <!-- Grid column -->
@@ -90,7 +88,7 @@
     <div class="col-md-5">
         <!--Mask with wave-->
         <div class="view overlay">
-            <img src="img/traceability-logic.jpg" class="img-fluid rounded" alt="Example image" style="width: 500px; height: 350px">
+            <img src="img/thesis-station-setup.png" class="img-fluid rounded" alt="Example image" style="width: 500px; height: 350px">
             <a>
             <div class="mask waves-effect rgba-white-slight"></div>
             </a>
@@ -104,13 +102,9 @@
   <div class="row mb-5">
     <!-- Grid column -->
     <div class="col-md-7">
-      <i class="fas fa-database fa-5x blue-text animated tada"></i>
-      <h5 class="font-weight-bold my-4">Database</h5>
-      <p class="grey-text mb-md-0 mb-4">One of the key components of every big-scale traceability system is the database design. This was developed as a relational database in SQL, using the star-schema model. The main challanges which I successfully overcame: 
-        <li class="grey-text">capturing data from both manual and automated stations,</li> 
-        <li class="grey-text">ensuring future scaleability,</li>
-        <li class="grey-text">capturing products genealogy,</li>
-        <li class="grey-text">enabling backtraceing of changes for products, raw materials, processes and genealogy.</li>
+      <i class="fas fa-chart-area fa-5x blue-text animated tada"></i>
+      <h5 class="font-weight-bold my-4">Data Analysis</h5>
+      <p class="grey-text mb-md-0 mb-4">I have used numerous techniques do visualize the data. The charts produced both validated the concept as well as provided valuable insights about data quality. Having seen the data, I have identified points on the voltage curves (and their other properties) which looked promising and had to be monitored for in-depth analysis. It became clear that due to high noise and unbalanced data, preprocessing techniques had to be used.
       </p>
     </div>
     <!-- Grid column -->
@@ -118,7 +112,7 @@
     <div class="col-md-5">
         <!--Mask with wave-->
         <div class="view overlay">
-            <img src="img/traceability-database.png" class="img-fluid rounded" alt="Database graph" style="width: 500px; height: 350px">
+            <img src="img/thesis-data.png" class="img-fluid rounded" alt="Database graph" style="width: 500px; height: 350px">
             <a>
             <div class="mask waves-effect rgba-white-slight"></div>
             </a>
@@ -132,13 +126,13 @@
   <div class="row mb-5">
     <!-- Grid column -->
     <div class="col-md-7">
-      <i class="fas fa-tachometer-alt fa-5x orange-text animated tada"></i>
-      <h5 class="font-weight-bold my-4">Business Inteligence</h5>
-      <p class="grey-text mb-md-0 mb-0">The data has been provided to decision-makers using a BI tool (Microsoft Power BI). It has been developed using SQL and DAX. The interactive live dashboard features: 
-        <li class="grey-text">key production KPIs,</li> 
-        <li class="grey-text">tool to search for products, theris status, genealogy, current production station etc.,</li>
-        <li class="grey-text">process timings for every production station,</li>
-        <li class="grey-text">bottlenecks.</li>
+      <i class="fas fa-cogs fa-5x grey-text animated tada"></i>
+      <h5 class="font-weight-bold my-4">Data Preprocessing</h5>
+      <p class="grey-text mb-md-0 mb-0">In order to improve data quality and balance the dataset, I have compared numerous preprocessing techniques and applied the best-performing one. The techniques included: 
+        <li class="grey-text">change of performance metrics to Precision&Recall,</li> 
+        <li class="grey-text">resampling the data (eg. undersampling and oversampling),</li>
+        <li class="grey-text">generating synthetic data (eg. SMOTE or kNN-SMOTE),</li>
+        <li class="grey-text">trying cost-evaluated or penalized models.</li>
       </p>
     </div>
     <!-- Grid column -->
@@ -146,7 +140,7 @@
     <div class="col-md-5">
         <!--Mask with wave-->
         <div class="view overlay">
-            <img src="img/traceability-bi.png" class="img-fluid rounded" alt="Example image" style="width: 500px; height: 350px">
+            <img src="img/thesis-preprocessing.png" class="img-fluid rounded" alt="Example image" style="width: 500px; height: 350px">
             <a>
             <div class="mask waves-effect rgba-white-slight"></div>
             </a>
@@ -161,11 +155,9 @@
   <div class="row mb-5">
     <!-- Grid column -->
     <div class="col-md-7">
-      <i class="fas fa-tablet-alt fa-5x green-text animated tada"></i>
-      <h5 class="font-weight-bold my-4">Backend and Frontend Dev</h5>
-      <p class="grey-text mb-md-0 mb-0">The vast part of the system is being used by factory operators for manual data insert. In order to facilitate ease of usage to the maximum, I have developed a series of simple interactive forms, specifically dedicated for mobile touchscreens.</br>
-      The backend of the app is written in PHP and is based mainly of the communication with the database.</br>
-      There is also a series of control panels used by priviliged quality inspectors and line managers, as well as a SCADA tool to be permamently visualized on the production hall.
+      <i class="fas fa-brain fa-5x red-text animated tada"></i>
+      <h5 class="font-weight-bold my-4">Machine Learning Model</h5>
+      <p class="grey-text mb-md-0 mb-0">Finally, I have trained and validated a supervised Machine Learning model. I have compared three algorithms: Decision Tree, Support Vector Machine and Random Forests. I have chosen Random Forests as the final model, achieving relatively high accuracy. 
       </p>
     </div>
     <!-- Grid column -->
@@ -173,7 +165,7 @@
     <div class="col-md-5">
         <!--Mask with wave-->
         <div class="view overlay">
-            <img src="img/traceability-frontend.jpg" class="img-fluid rounded" alt="Example image" style="width: 500px; height: 350px">
+            <img src="img/thesis-ml.png" class="img-fluid rounded" alt="Example image" style="width: 500px; height: 350px">
             <a>
             <div class="mask waves-effect rgba-white-slight"></div>
             </a>
