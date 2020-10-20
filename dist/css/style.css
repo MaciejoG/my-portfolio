@@ -42,3 +42,10 @@ h5 {
 #navbar-project {
   opacity: 1.0;
 }
+
+.img-project {
+  float: left;
+  width:  400px;
+  height: 400px;
+  object-fit: cover;
+}
