@@ -188,7 +188,7 @@
                       <!--Card image-->
                       <div class="view overlay">
                         <img class="card-img-top" src="dist/img/traceability-card-2.jpg" alt="Card image cap" style="max-height:100%;">
-                        <a href="dist/project-traceability.html">
+                        <a href="project-traceability.php">
                           <div class="mask rgba-white-slight"></div>
                         </a>
                       </div>
@@ -208,7 +208,7 @@
                       <!--Card image-->
                       <div class="view overlay">
                         <img class="card-img-top" src="dist/img/L2P-green-card.png" alt="Card image cap">
-                        <a href="dist/project-land2plant.html">
+                        <a href="project-land2plant.php">
                           <div class="mask rgba-white-slight"></div>
                         </a>
                       </div>
@@ -265,7 +265,7 @@
                       <!--Card image-->
                       <div class="view overlay">
                         <img class="card-img-top" src="dist/img/project-thesis-card.jpg" alt="Card image cap">
-                        <a href="dist/project-thesis.html">
+                        <a href="project-thesis.php">
                           <div class="mask rgba-white-slight"></div>
                         </a>
                       </div>
@@ -345,7 +345,7 @@
                       <!--Card image-->
                       <div class="view overlay">
                         <img class="card-img-top" src="dist/img/battery-testing-card.jpg" alt="Card image cap" style="max-height:100%;">
-                        <a href="dist/project-traceability.html">
+                        <a href="#!">
                           <div class="mask rgba-white-slight"></div>
                         </a>
                       </div>
