@@ -117,5 +117,5 @@ if (!$mail->send()) {
 } else {
     // echo 'Message sent!';
     // Rolad index page 
-    header("../index.html"); // your current page
+    // header("../index.html"); // your current page
 }
