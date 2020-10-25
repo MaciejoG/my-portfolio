@@ -6,7 +6,7 @@
         <!-- Section heading -->
         <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact me</h2>
         <!-- Section description -->
-        <p class="text-center w-responsive mx-auto mb-5">Networking is the key. Whether you are a student, a recruiter, an entrepreneur or an employer, let's get in touch! Fill in the form, shot me an email or message me on Linkedin!</p>
+        <p class="text-center w-responsive mx-auto mb-5">Networking is the key. Whether you are a student, a recruiter, an entrepreneur or an employer, let's get in touch!</p>
 
         <!-- Grid row -->
         <div class="row">
@@ -14,7 +14,7 @@
             <!-- Grid column -->
             <div class="col-md-9 mb-md-0 mb-5">
 
-                <form id="contact-form" name="contact-form" action="phpmailer/mail.php" method="POST">
+                <form id="contact-form" name="contact-form" >
 
                     <!-- Grid row -->
                     <div class="row">
@@ -74,9 +74,10 @@
                 </form>
 
                 <div class="text-center text-md-left">
-                    <a class="btn btn-indigo btn-md" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    <a class="btn btn-indigo btn-md" onclick="validateForm();">Send</a>
                     <!-- <a class="btn btn-indigo btn-md">Send</a> -->
                 </div>
+                <div class="status red-text" id="status" colour="red"></div>
 
             </div>
             <!-- Grid column -->

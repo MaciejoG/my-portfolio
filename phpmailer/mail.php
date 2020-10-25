@@ -13,7 +13,7 @@ use League\OAuth2\Client\Provider\Google;
 
 //SMTP needs accurate times, and the PHP time zone MUST be set
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
-date_default_timezone_set('Etc/UTC');
+date_default_timezone_set("Europe/Stockholm");  
 
 //Load dependencies from composer
 //If this causes an error, run 'composer install'
@@ -22,100 +22,127 @@ require '../vendor/autoload.php';
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
 
-//Tell PHPMailer to use SMTP
-$mail->isSMTP();
+try {
 
-//Enable SMTP debugging
-// SMTP::DEBUG_OFF = off (for production use)
-// SMTP::DEBUG_CLIENT = client messages
-// SMTP::DEBUG_SERVER = client and server messages
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    //Tell PHPMailer to use SMTP
+    $mail->isSMTP();
 
-//Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+    //Enable SMTP debugging
+    $mail->SMTPDebug = SMTP::DEBUG_OFF;
+    // SMTP::DEBUG_CLIENT = client messages
+    // SMTP::DEBUG_SERVER = client and server messages
+    // uncomment below to enable debugging
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
 
-//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+    //Set the hostname of the mail server
+    $mail->Host = 'smtp.gmail.com';
 
-//Set the encryption mechanism to use - STARTTLS or SMTPS
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+    $mail->Port = 587;
 
-//Whether to use SMTP authentication
-$mail->SMTPAuth = true;
+    //Set the encryption mechanism to use - STARTTLS or SMTPS
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-//Set AuthType to use XOAUTH2
-$mail->AuthType = 'XOAUTH2';
+    //Whether to use SMTP authentication
+    $mail->SMTPAuth = true;
 
-//Fill in authentication details here
-//Either the gmail account owner, or the user that gave consent
-$email = 'gg.maciek@gmail.com';
-$clientId = '568692706300-t8grtcpbtlfa9h06lva3gifkj676kat8.apps.googleusercontent.com';
-$clientSecret = 'Zy_iLd6yj_08RMsFS323kHwL';
+    //Set AuthType to use XOAUTH2
+    $mail->AuthType = 'XOAUTH2';
 
-//Obtained by configuring and running get_oauth_token.php
-//after setting up an app in Google Developer Console.
-$refreshToken = '1//0cqFa71deJgEFCgYIARAAGAwSNwF-L9IrniOrLcwyOV_LqIOU0ksZ3cDTiu7aBl5zTydyPVIzB9nGk7iDptA0ge95kw2gaUc2wyI';
+    //Fill in authentication details here
+    //Either the gmail account owner, or the user that gave consent
+    $email = 'gg.maciek@gmail.com';
+    $clientId = '568692706300-t8grtcpbtlfa9h06lva3gifkj676kat8.apps.googleusercontent.com';
+    $clientSecret = 'Zy_iLd6yj_08RMsFS323kHwL';
 
-//Create a new OAuth2 provider instance
-$provider = new Google(
-    [
-        'clientId' => $clientId,
-        'clientSecret' => $clientSecret,
-    ]
-);
+    //Obtained by configuring and running get_oauth_token.php
+    //after setting up an app in Google Developer Console.
+    $refreshToken = '1//0cqFa71deJgEFCgYIARAAGAwSNwF-L9IrniOrLcwyOV_LqIOU0ksZ3cDTiu7aBl5zTydyPVIzB9nGk7iDptA0ge95kw2gaUc2wyI';
 
-//Pass the OAuth provider instance to PHPMailer
-$mail->setOAuth(
-    new OAuth(
+    //Create a new OAuth2 provider instance
+    $provider = new Google(
         [
-            'provider' => $provider,
             'clientId' => $clientId,
             'clientSecret' => $clientSecret,
-            'refreshToken' => $refreshToken,
-            'userName' => $email,
         ]
-    )
-);
+    );
 
-// Get Message content
-if(isset( $_POST['name']))
-$name = $_POST['name'];
-if(isset( $_POST['email']))
-$email_from = $_POST['email'];
-if(isset( $_POST['message']))
-$message = $_POST['message'];
-if(isset( $_POST['subject']))
-$subject = $_POST['subject'];
+    //Pass the OAuth provider instance to PHPMailer
+    $mail->setOAuth(
+        new OAuth(
+            [
+                'provider' => $provider,
+                'clientId' => $clientId,
+                'clientSecret' => $clientSecret,
+                'refreshToken' => $refreshToken,
+                'userName' => $email,
+            ]
+        )
+    );
 
-$content="From: " . $name . "\nEmail: " . $email_from . "\nSubject: " . $subject . "\nMessage:\n" . $message;
+    // Get Message content
+    $data = file_get_contents( "php://input" ); 
+    $data = json_decode( $data );
+    $name = $data->name;
+    $message = $data->message;
+    $subject = $data->subject;
+    $email_from = $data->email;
 
-//Set who the message is to be sent from
-//For gmail, this generally needs to be the same as the user you logged in as
-$mail->setFrom($email_from, $name);
+    if ($name === '') {
+        echo json_encode(array('message' => 'Name cannot be empty', 'success' => 0));
+        exit();
+    }
+    if ($email_from === '') {
+        echo json_encode(array('message' => 'Email cannot be empty', 'success' => 0));
+        exit();
+    } else {
+        if (!filter_var($email_from, FILTER_VALIDATE_EMAIL)) {
+            echo json_encode(array('message' => 'Email format invalid.', 'success' => 0));
+            exit();
+        }
+    }
+    if ($subject === '') {
+        echo json_encode(array('message' => 'Subject cannot be empty', 'success' => 0));
+        exit();
+    }
+    if ($message === '') {
+        echo json_encode(array('message' => 'Message cannot be empty', 'success' => 0));
+        exit();
+    }
 
-//Set who the message is to be sent to
-$mail->addAddress('maciej.gumulka@gmail.com', 'Maciej Gumulka');
+    $content = "From: " . $name . "\nEmail: " . $email_from . "\nSubject: " . $subject . "\nMessage:\n" . $message;
+    $content_html = "<b>From:</b><br>" . $name . "<br><b>Email:</b><br>" . $email_from . "<br><b>Subject:</b><br>" . $subject . "<br><b>Message:</b><br>" . $message;
+    // Set email format to HTML
+    $mail->isHTML(true);
 
-//Set the subject line
-$mail->Subject = "Portfolio Contact Form Submission";
+    //Set who the message is to be sent from
+    //For gmail, this generally needs to be the same as the user you logged in as
+    $mail->setFrom($email_from, $name);
 
-//Read an HTML message body from an external file, convert referenced images to embedded,
-//convert HTML into a basic plain-text alternative body
-$mail->CharSet = PHPMailer::CHARSET_UTF8;
-$mail->Body = "Contact form submission\n\n" . $content;
-// $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
+    //Set who the message is to be sent to
+    $mail->addAddress('maciej.gumulka@gmail.com', 'Maciej Gumulka');
 
-//Replace the plain text body with one created manually
-$mail->AltBody = 'This is a plain-text message body';
+    //Set the subject line
+    $mail->Subject = "Portfolio Contact Form Submission";
 
-//Attach an image file
-// $mail->addAttachment('images/phpmailer_mini.png');
+    //Read an HTML message body from an external file, convert referenced images to embedded,
+    //convert HTML into a basic plain-text alternative body
+    $mail->CharSet = PHPMailer::CHARSET_UTF8;
+    $mail->Body = "<b>Contact form submission</b><br>" . $content_html;
+    // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
-//send the message, check for errors
-if (!$mail->send()) {
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    // echo 'Message sent!';
-    // Rolad index page 
-    // header("../index.html"); // your current page
+    //Replace the plain text body with one created manually
+    $mail->AltBody = "From: " . $name . "\nEmail: " . $email_from . "\nSubject: " . $subject . "\nMessage:\n" . $message;
+
+    //Attach an image file
+    // $mail->addAttachment('images/phpmailer_mini.png');
+
+    //send the message, check for errors
+    $mail->send();
+    echo json_encode(array('message' => 'Email successfully sent!', 'success' => 1));
+    exit();
+} catch (Exception $e) {
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo json_encode(array('message' => "Unexpected error occured", 'success' => 0));
+    exit();
 }
