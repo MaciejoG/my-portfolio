@@ -87,16 +87,7 @@ $message = $_POST['message'];
 if(isset( $_POST['subject']))
 $subject = $_POST['subject'];
 
-// $content="From: $name \n Email: $email \n Message: $message";
-// $recipient = "youremail@here.com";
-// $mailheader = "From: $email \r\n";
-// mail($recipient, $subject, $content, $mailheader) or die("Error!");
-
-// Rolad index page 
-header("location:index.html"); // your current page
-
-
-$name = 'Recruiter Marry';
+$content="From: " . $name . "\nEmail: " . $email_from . "\nSubject: " . $subject . "\nMessage:\n" . $message;
 
 //Set who the message is to be sent from
 //For gmail, this generally needs to be the same as the user you logged in as
@@ -106,12 +97,12 @@ $mail->setFrom($email_from, $name);
 $mail->addAddress('maciej.gumulka@gmail.com', 'Maciej Gumulka');
 
 //Set the subject line
-$mail->Subject = $subject;
+$mail->Subject = "Portfolio Contact Form Submission";
 
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 $mail->CharSet = PHPMailer::CHARSET_UTF8;
-$mail->Body = "Contact form submission\n\n" . $message;
+$mail->Body = "Contact form submission\n\n" . $content;
 // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
 //Replace the plain text body with one created manually
@@ -124,5 +115,7 @@ $mail->AltBody = 'This is a plain-text message body';
 if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Message sent!';
+    // echo 'Message sent!';
+    // Rolad index page 
+    header("../index.html"); // your current page
 }
