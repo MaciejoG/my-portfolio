@@ -26,7 +26,7 @@
               <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">MACIEJ
                 <a class="indigo-text font-weight-bold">GUMULKA</a>
               </h1>
-              <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Data Enthusiast & Electrical Engineer</h5>
+              <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Data Scientist & Electrical Engineer</h5>
               <div class="wow fadeInDown" data-wow-delay="0.3s">
                 <a class="btn btn-light-blue btn-lg" href="#projects">Portfolio</a>
                 <a class="btn btn-indigo btn-lg" href="#about">About me</a>
@@ -55,11 +55,34 @@
       <div class="container">
         <!-- Section heading -->
         <h2 class="h1-responsive font-weight-bold text-center mb-5">Who am I?</h2>
-        <!-- Section description -->
-        <p class="lead grey-text text-center w-responsive mx-auto mb-5">I'm an electrical engineer with passion towards data science. Former startup owner, multiple awards winner, programmer and out-of-the-box thinker.</p>
 
         <!-- Grid row -->
-        <div class="row mb-5">
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-7 mb-5">
+            <div class="lead grey-text text-justify">
+              I'm an electrical engineer experienced in software and data. Since the start of my professional career in 2018, I have worked in multiple countries across three continents. I have graduated with EIT-labeled double master degree in Energy for Smart Cities and currently work at Northvolt in Sweden.<br>
+              My job is about leveraging Northvolt's battery manufacturing to highly-automated, digitalized factories. I have built algorithms detecting failures during battery production, saving time and money for the company. I have also been developing a traceability system for the entire factory and thus transforming the business into a transparent, decision-driven manufacturing.<br>
+              What differs me from other software engineers is out-of-the-box thinking. I specialize in innovation, what has so far resulted in multiple awards and a startup of my own.<br>
+              What wakes me up in the morning is the motivation towards using my skills to bring about more sustainable future. If I'm not online, I'm probably doing sport or reading about space industry.
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-5 mb-5">
+            <div class="view overlay">
+              <a>
+                <img src="dist/img/my-picture.jpeg" class="img-fluid rounded mx-auto" alt="Myself image">
+                <div class="mask waves-effect rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row">
 
           <!-- Grid column -->
           <div class="col-md-4">

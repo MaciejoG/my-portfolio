@@ -49,3 +49,7 @@ h5 {
   height: 400px;
   object-fit: cover;
 }
+
+.aligncenter {
+    text-align: center;
+}
