@@ -63,7 +63,7 @@
             <div class="lead grey-text text-justify">
               I'm an electrical engineer experienced in software and data. Since the start of my professional career in 2018, I have worked in multiple countries across three continents. I have graduated with Cum Laude from EIT-labeled double master degree in Energy for Smart Cities and currently work at Northvolt in Sweden.<br>
               My job is about leveraging Northvolt's battery manufacturing to highly-automated, digitalized factories. I have built algorithms detecting failures during battery production, saving time and money for the company. I have also developed a traceability system for the entire factory and thus transforming the business into a transparent, decision-driven manufacturing.<br>
-              What differs me from other software engineers is out-of-the-box thinking. My innovative approach has so far resulted in multiple awards and a startup of my own.<br>
+              What differentiates me from other software engineers is out-of-the-box thinking. My innovative approach has so far resulted in multiple awards and a startup of my own.<br>
               What wakes me up in the morning is the motivation towards using my skills to bring about more sustainable future. If I'm not online, I'm probably doing sport or reading about space industry.
             </div>
           </div>
@@ -113,7 +113,7 @@
           <!-- Grid column -->
           <div class="col-md-4">
 
-            <i class="far fa-tablet-alt fa-3x blue-text"></i>
+            <i class="fas fa-tablet-alt fa-3x blue-text"></i>
             <h5 class="font-weight-bold my-4">Web/App Development</h5>
             <p class="grey-text mb-md-0">I've built mutiple apps for automated battery testing, as well as deployed websites for my personal projects, startup and competitions. The testing apps allowed for easier and more reliable manufacturing, while the websites were used for presentation of my projects in an attractive way.
             </p>
@@ -130,7 +130,7 @@
           <!-- Grid column -->
           <div class="col-md-4">
 
-            <i class="far fa-briefcase fa-3x green-text"></i>
+            <i class="fas fa-briefcase fa-3x green-text"></i>
             <h5 class="font-weight-bold my-4">Entrepreneurship</h5>
             <p class="grey-text mb-md-0 mb-0">In 2019 I started my own business <a href="https://land2plant.com" target="_blank">Land2Plant</a>. The startup has won mutiple awards:
               <li class="grey-text"><a href="https://www.innoenergy.com/news-events/innoenergy-masters-school-students-awarded-on-the-11th-edpr-university-challenge-2019/" target="_blank">EDPR University Challenge (3rd place)</a>,</li>
@@ -145,7 +145,7 @@
           <!-- Grid column -->
           <div class="col-md-4">
 
-            <i class="far fa-users fa-3x orange-text"></i>
+            <i class="fas fa-users fa-3x orange-text"></i>
             <h5 class="font-weight-bold my-4">Leadership</h5>
             <p class="grey-text mb-md-0 mb-0">Leading people comes natural to me. I have sucessfuly managed multiple teams:
               <li class="grey-text">a 4-persons team working for the municipality of Antwerp (6 months),</li>
@@ -161,7 +161,7 @@
           <!-- Grid column -->
           <div class="col-md-4">
 
-            <i class="far fa-tools fa-3x black-text"></i>
+            <i class="fas fa-tools fa-3x black-text"></i>
             <h5 class="font-weight-bold my-4">Engineering</h5>
             <p class="grey-text mb-md-0">I have worked in energy and battery sectors. I am knowledgeable of bettery manufacturing and testing, power grids, heating systems and optimization algorithms. In all these indsutries I have either developed a software or an automation product.
             </p>
