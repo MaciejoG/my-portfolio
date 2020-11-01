@@ -61,9 +61,9 @@
           <!-- Grid column -->
           <div class="col-md-7 mb-5">
             <div class="lead grey-text text-justify">
-              I'm an electrical engineer experienced in software and data. Since the start of my professional career in 2018, I have worked in multiple countries across three continents. I have graduated with EIT-labeled double master degree in Energy for Smart Cities and currently work at Northvolt in Sweden.<br>
-              My job is about leveraging Northvolt's battery manufacturing to highly-automated, digitalized factories. I have built algorithms detecting failures during battery production, saving time and money for the company. I have also been developing a traceability system for the entire factory and thus transforming the business into a transparent, decision-driven manufacturing.<br>
-              What differs me from other software engineers is out-of-the-box thinking. I specialize in innovation, what has so far resulted in multiple awards and a startup of my own.<br>
+              I'm an electrical engineer experienced in software and data. Since the start of my professional career in 2018, I have worked in multiple countries across three continents. I have graduated with Cum Laude from EIT-labeled double master degree in Energy for Smart Cities and currently work at Northvolt in Sweden.<br>
+              My job is about leveraging Northvolt's battery manufacturing to highly-automated, digitalized factories. I have built algorithms detecting failures during battery production, saving time and money for the company. I have also developed a traceability system for the entire factory and thus transforming the business into a transparent, decision-driven manufacturing.<br>
+              What differs me from other software engineers is out-of-the-box thinking. My innovative approach has so far resulted in multiple awards and a startup of my own.<br>
               What wakes me up in the morning is the motivation towards using my skills to bring about more sustainable future. If I'm not online, I'm probably doing sport or reading about space industry.
             </div>
           </div>
@@ -89,7 +89,7 @@
 
             <i class="fas fa-brain fa-3x red-text animated tada"></i>
             <h5 class="font-weight-bold my-4">Machine Learning</h5>
-            <p class="grey-text mb-md-0 mb-0">I've been heavily occupied with ML since 2018, mainly in anomaly detection. Successfuly deployed projects for many industries:
+            <p class="grey-text mb-md-0 mb-0">I've been heavily occupied with Machine Learning since 2018, mainly in anomaly detection. Successfuly replaced tedious engineering work with automated solutions in products for many industries:
               <li class="grey-text">power grids,</li>
               <li class="grey-text">residential heating systems,</li>
               <li class="grey-text">space data providers,</li>
@@ -105,7 +105,7 @@
 
             <i class="fas fa-chart-area fa-3x cyan-text"></i>
             <h5 class="font-weight-bold my-4">Data Engineering</h5>
-            <p class="grey-text mb-md-0 mb-5">I've designed robust databases, built multiple data pipelines, integrated data-capture with battery-testing, performed automated KPI anlysis. My biggest project so far is a traceability system for the entire production factory.
+            <p class="grey-text mb-md-0 mb-5">I've designed robust databases, built multiple data pipelines, integrated data-capture with battery-testing, performed automated KPI anlysis. All these solutions enabled capturing, safe storage and analysis of production data, thus improving decision-making. My biggest project so far is a traceability system for the entire production factory.
 
           </div>
           <!-- Grid column -->
@@ -115,7 +115,7 @@
 
             <i class="far fa-tablet-alt fa-3x blue-text"></i>
             <h5 class="font-weight-bold my-4">Web/App Development</h5>
-            <p class="grey-text mb-md-0">I've built mutiple apps for automated battery testing, as well as deployed websites for my personal projects, startup and competitions.
+            <p class="grey-text mb-md-0">I've built mutiple apps for automated battery testing, as well as deployed websites for my personal projects, startup and competitions. The testing apps allowed for easier and more reliable manufacturing, while the websites were used for presentation of my projects in an attractive way.
             </p>
 
           </div>
@@ -163,7 +163,7 @@
 
             <i class="far fa-tools fa-3x black-text"></i>
             <h5 class="font-weight-bold my-4">Engineering</h5>
-            <p class="grey-text mb-md-0">I have worked in energy and battery sectors. I am knowledgeable of bettery manufacturing and testing, power grids, heating systems and optimization algorithms.
+            <p class="grey-text mb-md-0">I have worked in energy and battery sectors. I am knowledgeable of bettery manufacturing and testing, power grids, heating systems and optimization algorithms. In all these indsutries I have either developed a software or an automation product.
             </p>
 
           </div>
@@ -188,11 +188,21 @@
           <div class="col-12">
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold mb-5">My best projects</h2>
-            <!-- Section description -->
-            <p class="lead grey-text text-center w-responsive mx-auto mb-5">Click on the cards to know the details</p>
             <!-- <p class="grey-text w-responsive mx-auto mb-1">Click on the cards to know the details</p> -->
           </div>
         </div>
+
+        <!-- Slide left and right buttons -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
 
         <div class="col-12">
           <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
@@ -210,7 +220,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/traceability-card-2.jpg" alt="Card image cap" style="max-height:100%;">
+                        <img class="card-img-top" src="dist/img/traceability-card-3.jpg" alt="Card image cap" style="max-height:100%;">
                         <a href="project-traceability.php">
                           <div class="mask rgba-white-slight"></div>
                         </a>
@@ -220,7 +230,7 @@
                         <!--Title-->
                         <h4 class="card-title">Traceability System for Battery Factory</h4>
                         <!--Text-->
-                        <p class="card-text">Developing a Manufacturing Execution System aimed to capture&analyze all data generated during production of battery modules at Northvolt</p>
+                        <p class="card-text">Enabling digital manufacturing by developing a system capturing&analyzing data generated during production of batteries at Northvolt</p>
                         <h5 class="red-text"><i class="fas fa-desktop"></i> Software</h5>
                       </div>
                     </div>
@@ -238,9 +248,9 @@
                       <!--Card content-->
                       <div class="card-body">
                         <!--Title-->
-                        <h4 class="card-title">Land2Plant - Startup in Energy&Finance Domain</h4>
+                        <h4 class="card-title">My Own Startup in the Energy&Finance Domain</h4>
                         <!--Text-->
-                        <p class="card-text">My own startup - a crowdfunding platform enabling private investments in renewable energy projects</p>
+                        <p class="card-text">Crowdfunding platform enabling private investments in renewable energy projects. Some awards and many sleepless nights :)</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="green-text"><i class="fas fa-briefcase"></i> Entrepreneurship</h5>
                       </div>
@@ -251,7 +261,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/copernicus-card-2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="dist/img/copernicus-card-5.jpg" alt="Card image cap">
                         <a href="#!">
                           <div class="mask flex-center waves-effect waves-light rgba-black-strong">
                             <p class="white-text">Coming soon</p>
@@ -263,7 +273,7 @@
                         <!--Title-->
                         <h4 class="card-title">Winning Solution during the Copernicus Hackathon</h4>
                         <!--Text-->
-                        <p class="card-text">Leading a team of 4 during one of the biggest space hackathons in Sweden - business plan and algorithm development</p>
+                        <p class="card-text">Leading a team of 4 during space hackathon, resulted in a 2nd place award. One small step for me, one giant leap for my leadership skills.</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="orange-text"><i class="fas fa-users"></i> Leadership</h5>
                       </div>
@@ -287,7 +297,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/project-thesis-card.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="dist/img/thesis-card-2.jpg" alt="Card image cap">
                         <a href="project-thesis.php">
                           <div class="mask rgba-white-slight"></div>
                         </a>
@@ -295,9 +305,9 @@
                       <!--Card content-->
                       <div class="card-body">
                         <!--Title-->
-                        <h4 class="card-title">Detection of Failures in Production of Batteries</h4>
+                        <h4 class="card-title">Machine Learning Detecting Failures in Batteries</h4>
                         <!--Text-->
-                        <p class="card-text">Manufacturing test setup with embedded Machine Learning algorithm detecting failures in production of battery modules</p>
+                        <p class="card-text">Saving time and money with Machine Learning algorithm detecting failures in production of battery modules</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="red-text"><i class="fas fa-desktop"></i> Software</h5>
                       </div>
@@ -308,7 +318,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/heating-card.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="dist/img/heating-card-3.png" alt="Card image cap">
                         <a href="#!">
                           <div class="mask flex-center waves-effect waves-light rgba-black-strong">
                             <p class="white-text">Coming soon</p>
@@ -320,7 +330,7 @@
                         <!--Title-->
                         <h4 class="card-title">Innovative Heating System Time-Series Simulation</h4>
                         <!--Text-->
-                        <p class="card-text">One-year thermal simulation of a residential heating system equipped with grey-water heat recovery</p>
+                        <p class="card-text">One-year thermal simulation of an innovative heating system, providing quick&reliable proof of concept before prototype build</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="red-text"><i class="fas fa-desktop"></i> Software</h5>
                       </div>
@@ -331,7 +341,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/grid-outages-card.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="dist/img/grid-outages-card-2.jpg" alt="Card image cap">
                         <a href="#!">
                           <div class="mask flex-center waves-effect waves-light rgba-black-strong">
                             <p class="white-text">Coming soon</p>
@@ -343,7 +353,7 @@
                         <!--Title-->
                         <h4 class="card-title">Detection of Outages in Swedish Power Grid</h4>
                         <!--Text-->
-                        <p class="card-text">Machine Learning unsupervised algorithm parsing the swedish power-grid topology and detecting popular grid outages</p>
+                        <p class="card-text">Machine Learning unsupervised algorithm parsing the Swedish power-grid topology and detecting popular grid outages</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="red-text"><i class="fas fa-desktop"></i> Software</h5>
                       </div>
@@ -367,9 +377,11 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/battery-testing-card.jpg" alt="Card image cap" style="max-height:100%;">
+                        <img class="card-img-top" src="dist/img/battery-testing-card-2.jpg" alt="Card image cap" style="max-height:100%;">
                         <a href="#!">
-                          <div class="mask rgba-white-slight"></div>
+                          <div class="mask flex-center waves-effect waves-light rgba-black-strong">
+                            <p class="white-text">Coming soon</p>
+                          </div>
                         </a>
                       </div>
                       <!--Card content-->
@@ -377,7 +389,7 @@
                         <!--Title-->
                         <h4 class="card-title">Automated Testing For Batteries Production</h4>
                         <!--Text-->
-                        <p class="card-text">Setting up manufacturing test stations for BOL and EOL of Northvolt's production lines, including control software and automation.</p>
+                        <p class="card-text">Enabling speed and security by developing control&automation for manufacturing test stations of battery production lines.</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="grey-text"><i class="fas fa-tools"></i> Engineering</h5>
                       </div>
@@ -388,7 +400,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/web-dev-card.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="dist/img/web-dev-card-2.png" alt="Card image cap">
                         <a href="#!">
                           <div class="mask flex-center waves-effect waves-light rgba-black-strong">
                             <p class="white-text">Coming soon</p>
@@ -400,7 +412,7 @@
                         <!--Title-->
                         <h4 class="card-title">Full-Stack Responsive Web-Development</h4>
                         <!--Text-->
-                        <p class="card-text">Full-stack development of responsive, attractive websites for my company, own projects and competitions</p>
+                        <p class="card-text">Full-stack development of responsive, attractive websites for my company, own projects and competitions. Mostly for representative purposes</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="red-text"><i class="fas fa-desktop"></i> Software</h5>
                       </div>
@@ -411,7 +423,7 @@
                     <div class="card mb-4">
                       <!--Card image-->
                       <div class="view overlay">
-                        <img class="card-img-top" src="dist/img/fitness-card.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="dist/img/fitness-card-3.jpg" alt="Card image cap">
                         <a href="#!">
                           <div class="mask flex-center waves-effect waves-light rgba-black-strong">
                             <p class="white-text">Coming soon</p>
@@ -423,7 +435,7 @@
                         <!--Title-->
                         <h4 class="card-title">My Personal Fitness Dashboard</h4>
                         <!--Text-->
-                        <p class="card-text">Pulling health data from my Fitbit fitness tracker and MyFitnessPal app on an interactive dashboard</p>
+                        <p class="card-text">Developing healthy lifestyle changes by visualizing health data from fitness tracker and nutrition-logging app</p>
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                         <h5 class="red-text"><i class="fas fa-desktop"></i> Software</h5>
                       </div>
@@ -440,19 +452,7 @@
         </div>
       </div>
       </div>
-
-      <!-- Slide left and right buttons -->
-      <div class="row">
-        <div class="col-12 text-center">
-          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left"></i>
-          </a>
-          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-            <i class="fa fa-arrow-right"></i>
-          </a>
-        </div>
-
-      </div>
+      
     </section>
 
     <!--Section: testimonials-->
