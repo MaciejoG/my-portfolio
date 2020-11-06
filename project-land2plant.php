@@ -65,7 +65,7 @@
           <div class="col-md-6">
             <i class="fas fa-users fa-5x orange-text animated tada"></i>
             <h5 class="font-weight-bold my-4">Leadership and Project Management</h5>
-            <p class="grey-text mb-md-0 mb-4">In every startup one has to wear many hats. In Land2Plant I had the opportunity to work as Leader, Project Manager and financial planner.
+            <p class="grey-text mb-md-0 mb-0">In every startup one has to wear many hats. In Land2Plant I had the opportunity to work as Leader, Project Manager and financial planner.
               <li class="grey-text">I have led a team of 4, ensuring everyone is working on items accordingly with individual skills, mitigating conflicts, leading weekly team meetings and communicating with external stakeholders,</li>
               <li class="grey-text">As a Project Manager, I was resnponsible for adding structure to our daily work, long and short therm planning, setting long-term goals and organizing technical infrastructure,</li>
               <li class="grey-text">As a financial planner I developed a long-therm detailed financial plan.</li>
@@ -92,7 +92,7 @@
           <div class="col-md-6">
             <i class="fas fa-dollar-sign fa-5x green-text animated tada"></i>
             <h5 class="font-weight-bold my-4">Financial Model</h5>
-            <p class="grey-text mb-md-0 mb-4">I developed a robust financial plan, with financial projection for the nearest years. The plan was based on a realistic upscaling plan for our power plants, as well as on assumptions for the annual invested capital. These were determined through an exhaustive benchmarking of our competitors. Naturally, we have also included all fixed and variable expanses. The key challanges which we overcame:
+            <p class="grey-text mb-md-0 mb-0">I developed a robust financial plan, with financial projection for the nearest years. The plan was based on a realistic upscaling plan for our power plants, as well as on assumptions for the annual invested capital. These were determined through an exhaustive benchmarking of our competitors. Naturally, we have also included all fixed and variable expanses. The key challanges which we overcame:
               <li class="grey-text">making a thorough market research,</li>
               <li class="grey-text">getting familiar with fixed and variable costs for a young bussiness,</li>
               <li class="grey-text">estimating costs of permits and legal help,</li>

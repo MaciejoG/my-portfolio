@@ -67,7 +67,7 @@
           <div class="col-md-6">
             <i class="fas fa-database fa-5x blue-text animated tada"></i>
             <h5 class="font-weight-bold my-4">Database</h5>
-            <p class="grey-text mb-md-0 mb-4">One of the key components of every big-scale traceability system is the database design. I have designed a relation database in SQL, using the star-schema model. The main challanges which I successfully overcame:
+            <p class="grey-text mb-md-0 mb-0">One of the key components of every big-scale traceability system is the database design. I have designed a relation database in SQL, using the star-schema model. The main challanges which I successfully overcame:
               <li class="grey-text">high volume data storage,</li>
               <li class="grey-text">capturing data from both manual and automated stations,</li>
               <li class="grey-text">ensuring future scaleability and readiness to future changes,</li>
