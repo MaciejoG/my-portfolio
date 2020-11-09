@@ -372,10 +372,8 @@
                       <!--Card image-->
                       <div class="view overlay">
                         <img class="card-img-top" src="dist/img/battery-testing-card-2.jpg" alt="Card image cap" style="max-height:100%;">
-                        <a href="#!">
-                          <div class="mask flex-center waves-effect waves-light rgba-black-strong">
-                            <p class="white-text">Coming soon</p>
-                          </div>
+                        <a href="project-batteries.php">
+                          <div class="mask rgba-white-slight"></div>
                         </a>
                       </div>
                       <!--Card content-->
